@@ -1,0 +1,92 @@
+[
+  {
+    "id": "onix",
+    "name": "Chevrolet Onix",
+    "page": "https://assinatura.localiza.com/carros/chevrolet/onix",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/01a03929-aeaa-7be1-ad07-2bbba59c1930"
+  },
+  {
+    "id": "mobi",
+    "name": "Fiat Mobi",
+    "page": "https://assinatura.localiza.com/carros/fiat/mobi",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/01a019f6-c57c-7e02-a53a-71a6167b57ea"
+  },
+  {
+    "id": "argo",
+    "name": "Fiat Argo",
+    "page": "https://assinatura.localiza.com/carros/fiat/argo",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/019f907c-e4df-7402-a713-722e89292fc4"
+  },
+  {
+    "id": "compass",
+    "name": "Jeep Compass",
+    "page": "https://assinatura.localiza.com/carros/jeep/compass",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/01a03913-a23e-76bb-8373-d32928478cd0"
+  },
+  {
+    "id": "tcross",
+    "name": "Volkswagen T-Cross",
+    "page": "https://assinatura.localiza.com/carros/volkswagen/t-cross",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/019f9073-60fc-7173-bd07-baed763e0b18"
+  },
+  {
+    "id": "hrv",
+    "name": "Honda HR-V",
+    "page": "https://assinatura.localiza.com/carros/honda/hr-v",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/019f9075-f317-759d-bf46-cf53fe14473a"
+  },
+  {
+    "id": "city",
+    "name": "Honda City",
+    "page": "https://assinatura.localiza.com/carros/honda/city",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/019f907c-bec1-7264-831b-d74256f20f1b"
+  },
+  {
+    "id": "creta",
+    "name": "Hyundai Creta",
+    "page": "https://assinatura.localiza.com/carros/hyundai/creta",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/019f907c-7237-7310-840a-a395b868a3fb"
+  },
+  {
+    "id": "polo",
+    "name": "Volkswagen Polo",
+    "page": "https://assinatura.localiza.com/carros/volkswagen/polo",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/01a048ed-53e6-7b67-81c7-d5b829a43382"
+  },
+  {
+    "id": "taos",
+    "name": "Volkswagen Taos",
+    "page": "https://assinatura.localiza.com/carros/volkswagen/taos",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/019f9073-4e89-7836-8624-3fd1cdec8a91"
+  },
+  {
+    "id": "fastback",
+    "name": "Fiat Fastback",
+    "page": "https://assinatura.localiza.com/carros/fiat/fastback",
+    "image": "https://cdn-meoobackoffice-veiculos-api-prd.localiza.com/01a068bb-4906-7ccf-95fb-e03219f95eac"
+  },
+  {
+    "id": "dolphin-mini",
+    "name": "BYD Dolphin Mini",
+    "page": "https://www.byd.com/br/byd-por-assinatura",
+    "image": "https://www.byd.com/material/byd-site/br/leasing/landing-page/pc/dolphin-mini-pc.png"
+  },
+  {
+    "id": "yuan-pro",
+    "name": "BYD Yuan Pro",
+    "page": "https://www.byd.com/br/byd-por-assinatura",
+    "image": "https://www.byd.com/material/byd-site/br/leasing/landing-page/pc/yuan-pro-pc-2.png"
+  },
+  {
+    "id": "song-pro",
+    "name": "BYD Song Pro DM-i",
+    "page": "https://www.byd.com/br/byd-por-assinatura",
+    "image": "https://www.byd.com/material/__CN/byd-site/br/leasing/landing-page/pc/song-pro-flex.png"
+  },
+  {
+    "id": "duster",
+    "name": "Renault Duster",
+    "page": "https://www.renault.com.br/veiculos-de-passeio/duster.html",
+    "image": "https://cdn.group.renault.com/ren/br/renault-new-cars/product-plans/2026/duster/053_RENAULT-DUSTER-ICONIC_M01-HJD-Rlt-SS-Iconic.jpg.ximg.large.webp/ac31d39227.webp"
+  }
+]
