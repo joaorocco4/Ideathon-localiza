@@ -1,0 +1,80 @@
+/* Camada responsiva: mesma base, sem duplicação da aplicação ou do estado. */
+:root{--pc-header-height:90px}
+html{scroll-padding-top:calc(var(--prototype-height) + var(--pc-header-height) + 18px)}
+.pc-profile-bar{top:calc(var(--prototype-height) + var(--pc-header-height) + 8px)}
+.pc-mobile-nav{display:none}
+.pc-recommendation,.pc-account,.pc-recommended-car,.pc-profile-heading>div,.car-body,.pc-hero-copy{min-width:0}
+.pc-model .car-visual{background:#fff;padding:26px 12px 4px;height:200px}
+.pc-model .car-visual img{object-fit:contain;width:100%;height:100%;border-radius:10px}
+.pc-recommended-car>img{mix-blend-mode:normal;height:240px;object-fit:contain}
+.pc-main-hero .hero-car{object-fit:contain}
+.pc-option:focus-visible{outline:3px solid var(--ev);outline-offset:3px}
+.pc-category,.pc-chip,.pc-card-saving{overflow-wrap:anywhere}
+@media(min-width:601px) and (max-width:850px){
+ .pc-recommendation{grid-template-columns:1fr}
+ .pc-recommended-car{display:grid;grid-template-columns:1fr 1fr;column-gap:24px;align-items:center}
+ .pc-recommended-car .eyebrow,.pc-recommended-car h3,.pc-recommended-car .pc-chip{grid-column:1}
+ .pc-recommended-car>img{grid-column:2;grid-row:1/6;height:230px}
+ .pc-recommended-car .button{grid-column:1/-1}
+ .pc-account{padding:32px}
+ .pc-total{flex-direction:row}
+ .pc-hero-entry{flex-wrap:wrap}
+}
+@media(max-width:600px){
+ body{padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+ .wrap{padding-inline:clamp(16px,5vw,24px)}
+ .header-inner{padding:12px 16px;min-height:68px}
+ .brand img{width:clamp(126px,38vw,154px)}
+ .pc-prototype{padding-top:calc(8px + env(safe-area-inset-top,0px));padding-bottom:8px;font-size:10px;line-height:16px;min-height:48px}
+ .pc-mobile-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;position:fixed;bottom:0;left:0;right:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:#fffffff5;border-top:1px solid var(--line);box-shadow:0 -3px 18px #004d2b0a;z-index:30}
+ .pc-mobile-nav>a{font-size:13px;font-weight:600;color:var(--dark);padding:12px 0;white-space:nowrap}
+ .pc-mobile-nav .button{min-height:44px;font-size:13px;padding:12px 15px}
+ .floating-contact{display:none}
+ .pc-main-hero{padding:26px 22px 14px;gap:0}
+ .pc-main-hero h2{font-size:clamp(29px,8.8vw,42px);line-height:1.09;letter-spacing:-1.3px}
+ .pc-main-hero .eyebrow{font-size:10px;letter-spacing:1.4px}
+ .pc-main-hero .hero-car{height:170px;filter:none}
+ .pc-hero-actions{display:grid;grid-template-columns:1fr;gap:9px}
+ .pc-hero-actions .button{width:100%;min-height:44px;font-size:14px}
+ .pc-hero-entry{padding:20px 4px}.pc-hero-entry strong{font-size:19px}
+ .pc-hero-entry .button{font-size:13px}
+ .pc-profile-bar{position:static;gap:12px;padding:16px}
+ .pc-profile-bar>div{justify-content:space-between}
+ .pc-profile-bar button{min-height:40px;font-size:13px}
+ .pc-profile-heading{gap:12px}
+ .pc-profile-heading h2{font-size:clamp(23px,6.6vw,29px)}
+ .pc-profile-heading p{font-size:14px}
+ .pc-recommended-car,.pc-account{padding:24px 20px}
+ .pc-recommended-car>img{height:185px}
+ .pc-recommended-car h3{font-size:27px}
+ .pc-bar-row>div:first-child{align-items:flex-start;font-size:12px}
+ .pc-bar-row small{font-size:12px}
+ .pc-bar-row strong{font-size:17px}
+ .pc-saving>small{line-height:1.6}
+ .pc-saving>span{font-size:13px}
+ .pc-total{flex-wrap:wrap;gap:8px}
+ .pc-total>span{max-width:100%;font-size:13px}
+ .pc-total>strong{font-size:21px}
+ .pc-plan-details p,.pc-extra p{font-size:14px}
+ .pc-alternatives .car-grid,.car-grid{grid-template-columns:minmax(0,1fr)}
+ .pc-model .car-body{padding:20px}
+ .pc-model .car-visual{height:190px}
+ .pc-model .car-body .button{min-height:46px}
+ .tabs{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding-bottom:12px;max-width:100%;margin-inline:0}
+ .tabs button{min-height:44px;flex:0 0 auto}
+ .pc-fields{grid-template-columns:minmax(0,1fr)}
+ #pc-current-form input,#pc-current-form select,.pc-fields input,dialog select{font-size:16px;min-height:48px}
+ .pc-option{min-height:72px}
+ .pc-option strong{font-size:14px}.pc-option small{font-size:12px}
+ .pc-dialog{height:100vh;height:100dvh;max-height:100vh;max-height:100dvh}
+ .pc-dialog .pc-dialog-notice{padding-top:calc(10px + env(safe-area-inset-top,0px))}
+ .pc-dialog-footer{padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+ #pc-step{scroll-padding-block:14px;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+ #pc-question{font-size:clamp(23px,6.5vw,28px)}
+ .pc-range-label input{min-height:48px}
+ .pc-dialog .button{min-height:46px}
+ .pc-dialog-top .icon-button{min-width:44px;min-height:44px}
+ #pc-current-form .pc-skip,.pc-back,.pc-why summary{min-height:40px;line-height:1.6;padding-block:10px}
+ .footer-bottom{padding-bottom:22px}
+}
+@media(max-width:350px){.pc-profile-heading{display:block}.pc-letter{margin-bottom:16px}.pc-account,.pc-recommended-car{padding:20px 16px}.pc-mobile-nav .button{font-size:12px}.pc-dialog-top{padding-inline:18px}#pc-step{padding-inline:18px}.pc-total>strong{white-space:normal}}
