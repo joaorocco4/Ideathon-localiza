@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Explore categorias de carros e personalize seu plano de assinatura.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+  <meta name="theme-color" content="#008b45">
+  <title>Perfil Certo — Ideathon Localiza</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="perfil-certo/estilos.css">
+  <link rel="stylesheet" href="perfil-certo/responsivo.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="perfil-certo/dados.js" defer></script>
+  <script src="perfil-certo/logica.js" defer></script>
+  <script src="perfil-certo/ui.js" defer></script>
+  <script src="perfil-certo/responsivo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="header-inner">
+      <button class="menu-toggle icon-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span></button>
+      <nav id="navigation" aria-label="Navegação principal">
+        <a href="#carros">Carros</a><a href="#como-funciona">Como funciona</a><a href="#vantagens">Benefícios</a><a href="#duvidas">Dúvidas</a>
+      </nav>
+      <a class="brand" href="#" aria-label="Página inicial"><img src="assets/logo.svg" alt="Localiza Assinatura" width="162" height="48"></a>
+      <div class="header-actions"><button class="button lime" data-quote>Solicitar orçamento</button><button class="icon-button profile" aria-label="Sobre esta demonstração" data-about><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-3a7 7 0 0 1 14 0v3"/></svg></button></div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" aria-label="Destaques">
+      <div class="hero-slide pc-main-hero" data-slide="0">
+        <div class="hero-copy"><span class="eyebrow">PERFIL CERTO · LOCALIZA ASSINATURA</span><h2>O próximo carro.<br>A sua rotina<br>em primeiro lugar.</h2><p>Descubra como um elétrico ou híbrido pode fazer parte do seu dia.</p><div class="pc-hero-actions"><button class="button" data-quote>Montar meu plano</button><button class="button outline" data-pc-open>Descobrir meu perfil ↗</button></div></div>
+        <img src="assets/carros/dolphin-mini.webp" alt="BYD Dolphin Mini" class="hero-car">
+      </div>
+      <div class="hero-slide second-slide" data-slide="1" hidden>
+        <div class="hero-copy"><span class="eyebrow">SEU PRÓXIMO CARRO</span><h2>Mais liberdade.<br>Menos preocupação.</h2><p>Um carro novo e um plano que acompanha você.</p><button class="button" data-quote>Montar meu plano</button></div>
+        <img src="assets/carros/tcross.webp" alt="Volkswagen T-Cross" class="hero-car">
+      </div>
+      <div class="slider-controls"><button class="icon-button" id="previous" aria-label="Banner anterior">‹</button><button class="dot active" data-go-slide="0" aria-label="Exibir banner 1" aria-current="true"></button><button class="dot" data-go-slide="1" aria-label="Exibir banner 2" aria-current="false"></button><button class="icon-button" id="next" aria-label="Próximo banner">›</button></div>
+    </section>
+    <section class="intro section wrap" id="como-funciona">
+      <h1><span class="heading-small">Localiza Assinatura</span>Um novo jeito de ter seu carro.</h1>
+      <div class="benefit-row">
+        <article><span class="round-icon" data-icon="car"></span><p><strong>Seu próximo 0 km.</strong><br>Escolha a categoria que combina com você.</p></article>
+        <article><span class="round-icon" data-icon="shield"></span><p><strong>Mais previsibilidade.</strong><br>Serviços reunidos em uma mensalidade.</p></article>
+        <article><span class="round-icon" data-icon="key"></span><p><strong>Um plano do seu jeito.</strong><br>Personalize prazo e quilometragem.</p></article>
+        <article><span class="round-icon" data-icon="phone"></span><p><strong>Tudo mais próximo.</strong><br>Informações e serviços no aplicativo.</p></article>
+      </div>
+    </section>
+    <section class="cars section wrap" id="carros">
+      <h2>Qual carro acompanha <em>você?</em></h2><p class="section-lead">Da rotina na cidade à próxima viagem, encontre sua categoria.</p>
+      <div class="tabs" role="group" aria-label="Filtrar categorias"><button class="selected" data-filter="todos" aria-pressed="true">Todos</button><button data-filter="economico" aria-pressed="false">Econômicos</button><button data-filter="suv" aria-pressed="false">SUVs</button><button data-filter="eletrico" aria-pressed="false">Elétricos</button><button data-filter="premium" aria-pressed="false">Premium</button></div>
+      <div class="car-grid" id="car-grid" aria-live="polite"></div>
+      <p class="catalog-note">Imagens ilustrativas. Consulte disponibilidade e condições na contratação.</p>
+    </section>
+    <section class="steps-section section" id="passos"><div class="wrap steps-layout"><div><span class="eyebrow">SIMPLES DESDE O COMEÇO</span><h2>Você escolhe.<br>A vida segue.</h2><p>Seu caminho até o próximo carro, em três passos.</p><button class="button" data-quote>Personalizar assinatura</button></div><div class="steps"><article><span>01</span><div><h3>Encontre seu carro</h3><p>Compare as categorias e escolha o que faz sentido para sua rotina.</p></div></article><article><span>02</span><div><h3>Defina seu plano</h3><p>Selecione o prazo e a franquia mensal de quilômetros.</p></div></article><article><span>03</span><div><h3>Prepare a próxima jornada</h3><p>Confira a proposta e combine os detalhes da retirada.</p></div></article></div></div></section>
+    <section class="app-section wrap"><div class="app-copy"><span class="eyebrow">PRATICIDADE NA SUA MÃO</span><h2>Seu carro.<br>Seu dia.<br><em>Tudo conectado.</em></h2><p>Acompanhe documentos, consulte informações e organize os cuidados com o carro em um só lugar.</p><a href="#vantagens" class="text-link">Conhecer os benefícios</a></div><img src="assets/interior.webp" alt="Interior de veículo com painel multimídia" loading="lazy"></section>
+    <section class="advantages section" id="vantagens"><div class="wrap"><h2>Mais tranquilidade<br><em>em cada quilômetro.</em></h2><p class="section-lead">Cuidados que deixam mais espaço para aproveitar o caminho.</p><div class="advantages-grid" id="advantages-grid"></div></div></section>
+    <section class="journey section wrap"><div><span class="eyebrow">PRONTO PARA COMEÇAR?</span><h2>A próxima direção<br><em>é você quem escolhe.</em></h2></div><button class="button" data-quote>Encontrar meu plano</button></section>
+    <section class="faq section wrap" id="duvidas"><div><span class="eyebrow">PODEMOS AJUDAR</span><h2>Vamos tirar<br>suas <em>dúvidas?</em></h2><p>Entenda os primeiros passos para escolher sua assinatura.</p></div><div class="faq-items">
+      <details><summary>Como funciona um carro por assinatura?</summary><p>Você escolhe um veículo, o período de uso e uma franquia de quilômetros. Os serviços, valores e responsabilidades são definidos na proposta e no contrato.</p></details>
+      <details><summary>Posso escolher o prazo e a quilometragem?</summary><p>Sim. Nesta demonstração, você pode experimentar combinações de prazo e quilometragem em “Solicitar orçamento”. As opções comerciais devem ser confirmadas com a empresa.</p></details>
+      <details><summary>O que está incluído na mensalidade?</summary><p>O plano pode reunir documentação, manutenção, proteção e assistência. Consulte a proposta para verificar coberturas, limites, participações e serviços contratados.</p></details>
+      <details><summary>O que acontece no fim do contrato?</summary><p>As condições para devolução e eventual renovação são informadas no contrato. Ao renovar, você pode consultar os modelos e planos disponíveis naquele momento.</p></details>
+      <details><summary>Como escolher a categoria ideal?</summary><p>Pense no número de passageiros, no espaço de bagagem e nas distâncias do dia a dia. Use os filtros desta página para explorar as categorias e montar sua seleção.</p></details>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-grid"><div><img src="assets/logo-white.svg" alt="Localiza Assinatura" width="180" height="54"><p>Novos caminhos começam<br>com novas escolhas.</p></div><div><h3>Explore</h3><a href="#carros">Categorias de carros</a><a href="#como-funciona">Como funciona</a><a href="#vantagens">Benefícios</a></div><div><h3>Conte com a gente</h3><a href="#duvidas">Perguntas frequentes</a><button data-quote>Montar meu plano</button><button data-about>Sobre esta página</button></div></div><div class="wrap footer-bottom"><span>Protótipo independente para personalização. Sem vínculo oficial com a Localiza.</span><span>Design de referência: Localiza Assinatura</span></div></footer>
+  <button class="floating-contact button" data-quote><span data-icon="chat"></span><span>Montar meu plano</span></button>
+  <dialog id="quote-dialog" aria-labelledby="quote-title"><button class="close icon-button" data-close aria-label="Fechar">×</button><span class="eyebrow">UMA ESCOLHA COM A SUA CARA</span><h2 id="quote-title">Monte seu plano</h2><p>Selecione suas preferências para visualizar um resumo.</p><form id="quote-form"><label>Categoria<select id="category" name="categoria" required></select></label><div class="form-row"><label>Prazo<select id="duration" name="prazo"><option>12 meses</option><option selected>24 meses</option><option>36 meses</option><option>48 meses</option></select></label><label>Quilometragem mensal<select id="mileage" name="quilometragem"><option>500 km</option><option selected>1.000 km</option><option>1.500 km</option><option>2.000 km</option><option>3.000 km</option></select></label></div><button class="button" type="submit">Ver meu resumo</button></form><div id="plan-result" hidden aria-live="polite"><h3>Seu plano selecionado</h3><p id="plan-text"></p><button class="button" id="download-plan">Baixar resumo</button><button class="text-link" id="edit-plan">Alterar preferências</button></div><p class="demo-note">Simulação demonstrativa. Nenhum pedido é enviado e nenhum contrato é realizado.</p></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><button class="close icon-button" data-close aria-label="Fechar">×</button><h2 id="about-title">Sobre esta página</h2><p>Esta é uma base editável inspirada na página da Localiza Assinatura. Marcas e imagens pertencem aos seus respectivos titulares.</p><p>Os controles de plano são demonstrativos. Esta página não realiza contratações nem envia informações à Localiza.</p><button class="button" data-close>Entendi</button></dialog>
+</body>
+</html>
